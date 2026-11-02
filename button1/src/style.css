@@ -1,0 +1,136 @@
+:root {
+  font-family: Inter, "Segoe UI", sans-serif;
+  color: #35234d;
+  background: #f7f2ff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 12% 8%, #eadcff 0, transparent 38%),
+    radial-gradient(ellipse at 92% 88%, #eee4ff 0, transparent 36%),
+    #f8f5fc;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.container {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.card {
+  overflow: hidden;
+  border: 1px solid #eee5fa;
+  border-radius: 1.25rem;
+  background: rgb(255 255 255 / 94%);
+  box-shadow: 0 1.25rem 3.5rem rgb(83 48 121 / 12%) !important;
+}
+
+.card-body {
+  padding: clamp(1.25rem, 5vw, 2.25rem);
+}
+
+.card-title {
+  color: #48286a;
+  font-weight: 750;
+  letter-spacing: -0.035em;
+}
+
+.form-control {
+  min-height: 2.8rem;
+  border-color: #e6d9f3;
+  border-radius: 0.75rem;
+  color: #35234d;
+}
+
+.form-control::placeholder {
+  color: #9c8bab;
+}
+
+.form-control:focus {
+  border-color: #a77bd0;
+  box-shadow: 0 0 0 0.22rem rgb(141 89 190 / 16%);
+}
+
+.btn {
+  min-height: 2.8rem;
+  border-radius: 0.75rem;
+  font-weight: 650;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.btn-primary {
+  border-color: #7441a5;
+  background: linear-gradient(135deg, #8652b4, #673796);
+  box-shadow: 0 0.4rem 0.9rem rgb(103 55 150 / 20%);
+}
+
+.btn-primary:hover {
+  border-color: #5e308b;
+  background: linear-gradient(135deg, #75439f, #592d84);
+  box-shadow: 0 0.55rem 1rem rgb(103 55 150 / 26%);
+  transform: translateY(-1px);
+}
+
+.list-group {
+  gap: 0.55rem;
+}
+
+.list-group-item {
+  min-height: 3.6rem;
+  border: 1px solid #eee6f6 !important;
+  border-radius: 0.8rem !important;
+  background: #fcfaff;
+  color: #453258;
+  padding: 0.75rem 1rem;
+}
+
+.list-group-item .text-muted {
+  color: #8d7b9f !important;
+}
+
+.btn-danger {
+  min-height: auto;
+  border-color: #e7d8f3;
+  background: #f5edfb;
+  color: #714596;
+}
+
+.btn-danger:hover {
+  border-color: #d8c0eb;
+  background: #ebdcf7;
+  color: #583477;
+}
+
+.border-top {
+  border-color: #eee5f6 !important;
+}
+
+.text-success {
+  color: #70429a !important;
+}
+
+.text-muted {
+  color: #8d7b9f !important;
+}
+
+@media (max-width: 480px) {
+  .list-group-item {
+    align-items: flex-start !important;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+}
